@@ -84,7 +84,7 @@ export default {
       mountainsRef.put(this.imageFile).then(snapshot => {
         snapshot.ref.getDownloadURL().then(downloadURL => {
           this.imageUrl = downloadURL
-          const bucketName = "spa-auth-4f312.appspot.com"
+          const bucketName = "xxx-xxxx-xxxxx.xxxxxxx.xxx"
           const filePath = this.imageName
           db.collection("images").add({
             downloadURL,
