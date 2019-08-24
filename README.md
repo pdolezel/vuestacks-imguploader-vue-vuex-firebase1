@@ -1,4 +1,4 @@
-# vuestacks-img-fb-vuex
+# vuestacks-imguploader-vue-vuex-firebase
 
 ## Project setup
 ```
