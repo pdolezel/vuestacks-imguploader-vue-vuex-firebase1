@@ -37,7 +37,7 @@ import { mapState } from 'vuex'
 export default {
   name: "App",
   mounted () {
-    this.getData()
+    this.getImages()
   },
   data() {
     return {
@@ -50,7 +50,7 @@ export default {
     }
   },
   methods: {
-    getData () {
+    getImages () {
       this.$store.dispatch('setImgs')
       this.imageName = ""
       this.imageFile = ""
@@ -95,7 +95,7 @@ export default {
               originalName: this.imageName,
             timestamp: Date.now()
           })
-          this.getData()
+          this.getImages()
         })
       })
     },
@@ -106,7 +106,7 @@ export default {
       let desertRef = storageRef.child('images/' + imgFileName)
       await desertRef.delete()
       await db.collection("images").doc(img).delete()
-      this.getData()
+      this.getImages()
     }
   },
   computed: mapState([
