@@ -28,9 +28,11 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Check out https://jsfanatik.github.io to learn more about the VueStacks initiative!
+
 ### TECHNICAL OVERVIEW
 
-The VueStacks image uploader demo enables uploading of images from local files to Firebase Storage. 
+The VueStacks image uploader demo enables uploading of images from local files to Firebase Storage.
 
 ```Upload ()``` is an async function that pushes the selected image into Firebase storage. The image url is also pushed into the database to enable the image to continually display in the DOM after refreshing.
 
