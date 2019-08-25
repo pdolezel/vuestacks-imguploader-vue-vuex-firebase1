@@ -36,9 +36,6 @@ import { db } from "./main"
 import { mapState } from 'vuex'
 export default {
   name: "App",
-  mounted () {
-    this.getImages()
-  },
   data() {
     return {
       photo: null,
@@ -48,6 +45,9 @@ export default {
       imageUrl: "",
       imageFile: ""
     }
+  },
+  mounted () {
+    this.getImages()
   },
   methods: {
     getImages () {
